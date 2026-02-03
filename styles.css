@@ -229,23 +229,23 @@ header nav ul li a:hover::after {
     justify-content: center;
     width: 55%;
     position: relative;
-    transition: transform 1.1s ease;  /* entra um pouco deslocado */
+    transition: transform 1.1s ease; 
 }
 
 .item.active .product-side {
-    transform: translateX(-15px);     /* imagem desliza levemente pra esquerda */
+    transform: translateX(-15px);     
 }
     
-
-.product-img {
+   .product-img {
     width: 100%;
-    max-width: 680px;
+    max-width: 500px; 
     height: auto;
+    max-height: 60vh; 
     object-fit: contain;
-    filter: drop-shadow(0 0 60px rgba(0, 247, 255, 0.45));
-    position: relative;
+    filter: drop-shadow(0 0 30px rgba(0, 247, 255, 0.35));
     z-index: 2;
     animation: float 7s ease-in-out infinite;
+}
 
  
     filter: 
