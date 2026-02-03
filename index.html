@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>RRClub Store</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo" data-text="RRClub Store">RRClub Store</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Produtos</a></li>
+                <li><a href="#">contatos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <!-- Círculos tech -->
+        <div class="tech-circle">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+
+        <div class="list">
+            <!-- Slide 1 -->
+            <div class="item active">
+                <div class="product-side">
+                    <img src="./img/apple-watch.png" alt="Apple Watch Series 10" class="product-img">
+                </div>
+                <div class="content">
+                    <p class="product-tag">Novo Lançamento</p>
+                    <p class="product-name">Apple Watch Series 10</p>
+                    <p class="description">
+                        O smartwatch mais avançado do mercado. Monitoramento completo de saúde, GPS integrado, tela AMOLED de alta resolução e bateria de longa duração. Perfeito para acompanhar seu estilo de vida ativo.
+                    </p>
+                    <button class="btn">Saiba Mais</button>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="item">
+                <div class="product-side">
+                    <img src="./img/air-pods.png" alt="AirPods Max" class="product-img">
+                </div>
+                <div class="content">
+                    <p class="product-tag">Som Premium</p>
+                    <p class="product-name">AirPods Max</p>
+                    <p class="description">
+                        Os Apple AirPods Max são fones de ouvido circum-auriculares premium com cancelamento ativo de ruído (ANC) de alto nível, modo ambiente, e áudio espacial personalizado com rastreamento de cabeça.
+                    </p>
+                    <button class="btn">Saiba Mais</button>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="item">
+                <div class="product-side">
+                    <img src="./img/vision-pro.png" alt="Apple Vision Pro" class="product-img">
+                </div>
+                <div class="content">
+                    <p class="product-tag">Novo Lançamento</p>
+                    <p class="product-name">Apple Vision Pro</p>
+                    <p class="description">
+                        Vision Pro é um "computador espacial" de realidade mista, lançado em 2024, que integra conteúdo digital ao mundo físico usando apenas olhos, mãos e voz. Com o visionOS, permite navegar em apps, assistir filmes 3D e trabalhar com telas virtuais flutuantes.
+                    </p>
+                    <button class="btn">Saiba Mais</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Setas -->
+        <div class="arrows">
+            <button class="arrow-btn prev" id="prev">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"/>
+                </svg>
+            </button>
+            <button class="arrow-btn next" id="next">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Indicadores -->
+        <div class="indicators">
+            <div class="numbers">01</div>
+            <div class="dots">
+                <div class="dot active"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+        </div>
+    </main>
+
+    <!-- MODAL -->
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">×</span>
+            <h2 id="modalTitle"></h2>
+            <img id="modalImage" src="" alt="Produto" style="max-width: 100%; border-radius: 16px; margin: 20px 0;">
+            <p id="modalDescription"></p>
+            <button class="btn modal-close-btn">Fechar</button>
+        </div>
+    </div>
+
+    <script src="./scripts.js"></script>
+</body>
+</html>
