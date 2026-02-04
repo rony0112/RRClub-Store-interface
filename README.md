@@ -7,4 +7,5 @@ Landing page de e-commerce com design futurista, inspirada no ecossistema Apple.
 Uma landing page responsiva com tema da Apple, construída com HTML, CSS e JavaScript. Este projeto apresenta um design limpo com animações suaves.
 
 🌐 Visualize o projeto:
- https://rony0112.github.io/RRClub-Store---interface-Site/
+
+https://rony0112.github.io/RRClub-Store-Landing-page/
